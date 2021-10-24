@@ -1,0 +1,12 @@
+#!/bin/sh
+# Create a new drafts article
+
+if [ ! -d "./_drafts" ]; then
+  echo "Path _drafts/ doesn't exist. $1"
+else
+  cd ./_drafts
+  filename="$1.md"
+  title=`echo "$1" | tr "-" " "`
+  date=`date "+ %Y-%m-%d %H:%M:%S"`
+  echo "---\ntitle: $title\ndate: $date +0800\ncategory:\ntags:\nexcerpt:\n---" > $filename
+fi

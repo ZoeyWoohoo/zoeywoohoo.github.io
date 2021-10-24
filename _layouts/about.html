@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "zh-cmn-Hans" }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#EFFFC8">
+    <title>
+        {% if page.title %}
+        {{ page.title }}
+        {% else %}
+        关于
+        {% endif %}
+    </title>
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    {% include favicon.html %}
+
+    <link rel="stylesheet" href="{{ "/assets/css/about.css" }}">
+    <link rel="stylesheet" href="{{ "/assets/css/markdown.css" }}">
+    {% seo %}
+    {% include statistics_head.html %}
+</head>
+
+<body>
+    {% include header.html %}
+
+    <div class="page-content">
+        <div class="content" id="post-content">
+            <p>{{ content }}</p>
+
+            <div class="friends-link">
+
+                <div class="friend-card">
+                    <a href="https://jaeger.itscoder.com/">
+                        <img class="clean" src="https://avatars3.githubusercontent.com/u/7184320?s=460&v=4"></img>
+                        <p>写代码的猴子</p>
+                    </a>
+                </div>
+
+                <div class="friend-card">
+                    <a href="https://brucezz.itscoder.com/">
+                        <img class="clean" src="https://avatars0.githubusercontent.com/u/15318754?s=460&v=4"></img>
+                        <p>Brucezz</p>
+                    </a>
+                </div>
+
+                <div class="friend-card">
+                    <a href="http://extremej.itscoder.com/">
+                        <img class="clean" src="https://avatars3.githubusercontent.com/u/16322233?s=400&v=4"></img>
+                        <p>ExtremeJoe</p>
+                    </a>
+                </div>
+
+                <div class="friend-card">
+                    <a href="https://itsmelo.github.io/">
+                        <img class="clean" src="https://avatars1.githubusercontent.com/u/20601637?s=400&v=4"></img>
+                        <p>Melo</p>
+                    </a>
+                </div>
+
+                <div class="friend-card">
+                    <a href="https://allenwu.itscoder.com/">
+                        <img class="clean" src="https://avatars2.githubusercontent.com/u/13432620?s=400&v=4"></img>
+                        <p>AllenWu</p>
+                    </a>
+                </div>
+
+                <div class="friend-card">
+                    <a href="https://imxie.itscoder.com/">
+                        <img class="clean" src="https://avatars3.githubusercontent.com/u/11666634?s=400&v=4"></img>
+                        <p>XCC</p>
+                    </a>
+                </div>
+
+                <div class="friend-card">
+                    <a href="https://itscoder.com/members/">
+                        <img class="clean" src="https://avatars1.githubusercontent.com/u/20601570?s=200&v=4"></img>
+                        <p>itsCoder members</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+    <script src="{{ "/assets/js/zooming.min.js" }}"></script>
+    <script src="{{ "/assets/js/post_content_init.js" }}"></script>
+
+    {% if site.lock_menu and site.lock_menu == true %}
+    <script src="{{ "/assets/js/lock_menu.js" }}"></script>
+    {% endif %}
+    {% if site.copy_with_declaration and site.copy_with_declaration == true %}
+    <script src="{{ "/assets/js/copy_with_declaration.js" }}"></script>
+    {% elsif site.lock_copy and site.lock_copy == true %}
+    <script src="{{ "/assets/js/lock_copy.js" }}"></script>
+    {% endif %}
+
+    {% include statistics_body.html %}
+</body>
+
+</html>
