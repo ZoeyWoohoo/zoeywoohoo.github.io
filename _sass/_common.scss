@@ -1,5 +1,5 @@
 html {
-    font-family: monaco-webfont, Monaco, Helvetica, Tahoma, Arial, STXihei, "华文细黑",
+    font-family: LXGW, Monaco, Helvetica, Tahoma, Arial, STXihei, "华文细黑",
         "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
 }
 
@@ -115,17 +115,15 @@ html {
     }
 }
 
-/* monaco font face start */
+/* LXGW font face start */
 @font-face {
-    font-family: 'monaco-webfont';
-    src: url('https://showzeng.itscoder.com/assets/font/monaco-webfont.woff2') format('woff2'),
-        url('https://showzeng.itscoder.com/assets/font/monaco-webfont.woff') format('woff'),
-        url('https://showzeng.itscoder.com/assets/font/monaco-webfont.ttf') format('truetype');
+    font-family: 'LXGW';
+    src: url('https://cdn.jsdelivr.net/gh/zoeywoohoo/image@main/font/LXGWWenKaiGB-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-/* monaco font face end */
+/* LXGW font face end */
 
 /* (header.html) CSS start */
 header {

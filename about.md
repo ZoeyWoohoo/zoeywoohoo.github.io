@@ -7,13 +7,13 @@ comment: false
 
 ## 关于博客
 
-本站基于 [Jekyll] 和 [Coding Pages] 搭建，[Font Awesome] 提供图标支持，使用自己开发的 [Minimalism] 主题。
+本站基于 [Jekyll] 和 [Coding Pages] 搭建，[Font Awesome] 提供图标支持，[霞鹜文楷] 提供字体支持，使用自己开发的 [Minimalism] 主题。
 
 如何你也厌倦了那些花里胡哨的东西，想回归极简，同时又觉得这个主题不错的话，欢迎使用 🍻 。
 
 ## 关于作者
 
-网络常用 ID —— ~~showzeng~~ zoeywoohoo
+网络常用 ID —— zoeywoohoo
 
 ## 友链
 
@@ -22,6 +22,7 @@ comment: false
 [Jekyll]: https://jekyllrb.com/
 [Coding Pages]: https://pages.coding.me
 [Font Awesome]: https://fontawesome.com/
+[霞鹜文楷]: https://github.com/lxgw/LxgwWenkaiGB
 [Minimalism]: https://github.com/zoeywoohoo/minimalism
 [家园工作室]: http://team.ncuos.com/
 [itsCoder]: https://itscoder.com/
